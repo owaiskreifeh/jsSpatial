@@ -2,7 +2,7 @@ import "./styles.css";
 import {
   initSpatialNavigation,
   trackFocusables,
-  clearFocusalbes
+  clearFocusables
 } from "./navigation/navigation.js";
 
 // init methods
@@ -26,7 +26,7 @@ initSpatialNavigation({
 function init() {
   const num = document.getElementById("input-box-count").value;
   document.querySelector(".container").innerHTML = "";
-  clearFocusalbes();
+  clearFocusables();
   // Init boxes
   for (let index = 0; index < num; index++) {
     const el = document.createElement("div"),

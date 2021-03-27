@@ -19,7 +19,7 @@ export const trackFocusables = (className) => {
   }, 500);
 };
 
-export const clearFocusalbes = () => {
+export const clearFocusables = () => {
   if (!spatialNavigator) {
     return console.warn("spatialNavigator is not initialized yet");
   }
@@ -67,7 +67,7 @@ export function initSpatialNavigation({
   }
 
   function destory() {
-    clearFocusalbes();
+    clearFocusables();
     _keyNavigatorAdapter.off("move", onMove);
     _keyNavigatorAdapter.off("enter-keyup", onEnterElement);
     _spatialNavigator.off("focus", handleFocus);
